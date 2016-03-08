@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+/* force scrollbar */
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* ---- isotope ---- */
+
+.grid {
+    background: #DDD;
+}
+
+/* clear fix */
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ---- .grid-item ---- */
+.grid-sizer,
+.grid-item {
+
+}
+
+.grid-item {
+    float: left;
+    border: solid black 1px;
+    border-color: hsla(0,0%,100%,0.4);
+}
+
+.grid-item img {
+    display: block;
+    max-width: 100%;
+    padding: 15px;
+}
+
+@media (min-width: 600px) {
+    .grid-sizer,
+    .grid-item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 720px) {
+    .grid-sizer,
+    .grid-item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .grid-sizer,
+    .grid-item {
+        width: 25%;
+    }
+}
+
+.grid {
+    text-align: center;
+}
+

@@ -1,0 +1,9 @@
+{
+  "name": "chrisbuthfurness",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "connect": ">=3.4.1",
+    "serve-static": ">=1.10.2"
+  }
+}
