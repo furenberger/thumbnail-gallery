@@ -1,7 +1,8 @@
 // external js: isotope.pkgd.js, packery-mode.pkgd.js
 
-$( function() {
-    var $grid;
+$( function()
+{
+  var $grid;
   var IMAGE_JSON = "js/images.js";
 
   $.getJSON(IMAGE_JSON, function (json) {
@@ -39,7 +40,11 @@ $( function() {
       // init Isotope
       $grid = $('.grid').isotope({
           layoutMode: 'packery',
-          itemSelector: '.grid-item'
+          itemSelector: '.grid-item',
+          packery: {
+              gutter: '.gutter-sizer'
+          },
+
       });
 
       // layout Isotope after each image loads
